@@ -64,7 +64,6 @@ body {
   margin-bottom: 3%;
   width: 85%;
   box-shadow: 5px 1px 5px;
-  /*GRID*/
 }
 
 .destacados {
@@ -108,10 +107,12 @@ body {
 }
 
 .d-block {
+  height: 300px;
   width: 200px;
   margin: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+  object-fit: cover;
 }
 
 /****************BIBLIOTECA**********/
@@ -182,14 +183,10 @@ body {
   background-color: white;
   text-align: center;
   font-size: 1.5rem;
-  /*BOX MODELLING*/
-
   /*FLEXBOX*/
   display: flex;
   flex-flow: row wrap;
   justify-content: stretch;
-  /*GRID*/
-  grid-area: cat;
 }
 
 .caja4 article {
