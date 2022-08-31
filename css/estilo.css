@@ -31,13 +31,7 @@ body {
 /***************INDEX***************/
 
 .contenedor0 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(to right, #304352, #d7d2cc);
 }
 
 .nav-item {
@@ -137,15 +131,6 @@ body {
 
 /****************BIBLIOTECA**********/
 
-.contenedor1 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 
 .caja3 {
   background-color: rgb(255, 255, 255);
@@ -200,52 +185,90 @@ body {
 }
 
 .historia {
-  background-image: url(/img/historia.jpg);
+  background-image: url(../img/historia.jpg);
+  background-size: cover;
+}
+.historia:hover {
+  transform: translate(1px, -1px);
 }
 
 .agorismo {
-  background-image: url(/img/agorismo.jpg);
+  background-image: url(../img/agorismo.jpg);
+  background-size: cover; 
+}
+.agorismo:hover {
+  transform: translate(1px, -1px);
+}
+
+.politica {
+  background-image: url(../img/politica.jpg);
+  background-size: cover;
+}
+
+.politica:hover {
+  transform: translate(1px, -1px);
+}
+
+.ciencias {
+  background-image: url(../img/ciencias.jpg);
+  background-size: cover;
+}
+
+.ciencias:hover {
+  transform: translate(1px, -1px);
+}
+
+.nutricion {
+  background-image: url(../img/nutricion.jpg);
+  background-size: cover;
+}
+.nutricion:hover {
+  transform: translate(1px, -1px);
+}
+
+.psicologia {
+  background-image: url(../img/psicologia.png);
+  background-size:contain;
+}
+.psicologia:hover {
+  transform: translate(1px, -1px);
+}
+
+.programacion {
+  background-image: url(../img/programacion.jpg);
+  background-size: cover;
+}
+.programacion:hover {
+  transform: translate(1px, -1px);
+}
+
+.oficios {
+  background-image: url(../img/oficios.jpg);
+  background-size: cover;
+}
+.oficios:hover {
+  transform: translate(1px, -1px);
+}
+
+.filosofia {
+  background-image: url(../img/filosfia.jpg);
+  background-size: cover;
 }
 
 .articletittle {
   font-size: 3.4rem;
+  text-shadow: 1px 1px rgb(33, 31, 31);
 }
 
 
 
-/* .caja4 article {
-  border: 1px black solid;
-  width: 100%;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s, 0.5s;
-}
 
-.caja4 article:hover {
-  background-color: #24303ca1;
-  transform: translate(-1px, 1px);
-}
-
-.caja4 p {
-  font-size: 2rem;
-} */
 
 /***************PETICIONES***************/
 
-.contenedor2 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 
 .caja6 {
-  background: #0c3d6e;
+  background: #0423428f;
   padding: 50px;
   box-shadow: 5px 1px 5px;
   margin: auto;
@@ -256,8 +279,6 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  /*GRID*/
-  grid-area: peticiones;
 }
 
 .caja6 .form-control {
@@ -278,11 +299,10 @@ body {
 }
 
 .caja6 .btn-primary {
-  /* width: 20%; */
   background: #6c8f31;
   padding: 10px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid #026404;
   font-family: "calibri";
   font-size: 18px;
   color: white;
@@ -294,15 +314,6 @@ body {
 
 /*ACERCADENOSOTROS*/
 
-.contenedor3 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 
 .caja7 {
   font-size: 1.4;
