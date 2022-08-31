@@ -199,17 +199,21 @@ body {
   color: white;
 }
 
-.caja4 {
-  background-color: white;
-  text-align: center;
-  font-size: 1.5rem;
-  /*FLEXBOX*/
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: stretch;
+.historia {
+  background-image: url(/img/historia.jpg);
 }
 
-.caja4 article {
+.agorismo {
+  background-image: url(/img/agorismo.jpg);
+}
+
+.articletittle {
+  font-size: 3.4rem;
+}
+
+
+
+/* .caja4 article {
   border: 1px black solid;
   width: 100%;
   height: 90px;
@@ -226,7 +230,7 @@ body {
 
 .caja4 p {
   font-size: 2rem;
-}
+} */
 
 /***************PETICIONES***************/
 
