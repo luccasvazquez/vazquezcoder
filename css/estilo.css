@@ -353,16 +353,13 @@ body {
 /*********MEDIA QUERY***********/
 
 @media (max-width: 768px) {
-  .caja1 h3 {
-    text-align: center;
-  }
 
-  .caja2 img {
-    box-shadow: 1px 1px 1px;
+  .col-md-5 {
+    display: none;
   }
 
   .caja6 {
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 20px;
   }
 
