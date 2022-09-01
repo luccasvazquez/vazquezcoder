@@ -1,0 +1,83 @@
+.caja3 {
+  background-color: white;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 85%;
+  box-shadow: 5px 1px 5px; }
+  .caja3 .cabecera {
+    text-align: center;
+    color: white;
+    background-color: #24303c;
+    padding: 20px; }
+    .caja3 .cabecera .casilla {
+      width: 50%;
+      border-radius: 6px;
+      padding: 5px;
+      margin-bottom: 15px;
+      border-style: unset; }
+    .caja3 .cabecera .botonBuscar {
+      background-color: #0b6a84;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      border-radius: 6px;
+      border: 1px #0047ab solid;
+      margin-left: 5px; }
+    .caja3 .cabecera p {
+      font-size: 1.2rem;
+      text-transform: lowercase; }
+    .caja3 .cabecera a {
+      font-size: 1.2rem;
+      font-style: italic;
+      text-decoration: underline;
+      color: white; }
+  .caja3 .album .historia {
+    background-image: url(../img/historia.jpg);
+    background-size: cover; }
+    .caja3 .album .historia:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .agorismo {
+    background-image: url(../img/agorismo.jpg);
+    background-size: cover; }
+    .caja3 .album .agorismo:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .politica {
+    background-image: url(../img/politica.jpg);
+    background-size: cover; }
+    .caja3 .album .politica:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .ciencias {
+    background-image: url(../img/ciencias.jpg);
+    background-size: cover; }
+    .caja3 .album .ciencias:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .nutricion {
+    background-image: url(../img/nutricion.jpg);
+    background-size: cover; }
+    .caja3 .album .nutricion:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .psicologia {
+    background-image: url(../img/psicologia.png);
+    background-size: contain; }
+    .caja3 .album .psicologia:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .programacion {
+    background-image: url(../img/programacion.jpg);
+    background-size: cover; }
+    .caja3 .album .programacion:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .oficios {
+    background-image: url(../img/oficios.jpg);
+    background-size: cover; }
+    .caja3 .album .oficios:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .filosofia {
+    background-image: url(../img/filosfia.jpg);
+    background-size: cover; }
+    .caja3 .album .filosofia:hover {
+      transform: translate(1px, -1px); }
+  .caja3 .album .articletittle {
+    font-size: 3.4rem;
+    text-shadow: 1px 1px black; }

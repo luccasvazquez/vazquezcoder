@@ -1,0 +1,144 @@
+$tam-fuente: 1.5rem;
+
+
+
+.caja3 {
+  background-color: rgb(255, 255, 255);
+  font-size: $tam-fuente;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 85%;
+  box-shadow: 5px 1px 5px;
+
+  .cabecera {
+    text-align: center;
+    color: white;
+    background-color: #24303c;
+    padding: 20px;
+
+    .casilla {
+        width: 50%;
+        border-radius: 6px;
+        padding: 5px;
+        margin-bottom: 15px;
+        border-style: unset;
+      }
+
+      .botonBuscar {
+        background-color: rgb(11, 106, 132);
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px rgb(0, 71, 171) solid;
+        margin-left: 5px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-transform: lowercase;
+      }
+
+      a {
+        font-size: 1.2rem;
+        font-style: italic;
+        text-decoration: underline;
+        color: white;
+      }
+  }
+  
+  .album {
+    .historia {
+        background-image: url(../img/historia.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+
+    .agorismo {
+        background-image: url(../img/agorismo.jpg);
+        background-size: cover; 
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }  
+      
+      .politica {
+        background-image: url(../img/politica.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+
+      .ciencias {
+        background-image: url(../img/ciencias.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+      
+
+      .nutricion {
+        background-image: url(../img/nutricion.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+
+      
+      .psicologia {
+        background-image: url(../img/psicologia.png);
+        background-size:contain;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+
+      
+      .programacion {
+        background-image: url(../img/programacion.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+
+      
+      .oficios {
+        background-image: url(../img/oficios.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+
+      
+      .filosofia {
+        background-image: url(../img/filosfia.jpg);
+        background-size: cover;
+
+        &:hover {
+            transform: translate(1px, -1px);
+        }
+      }
+      
+      .articletittle {
+        font-size: 3.4rem;
+        text-shadow: 1px 1px rgb(0, 0, 0);
+      }
+  }
+  
+}
