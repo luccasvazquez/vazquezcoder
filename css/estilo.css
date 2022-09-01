@@ -10,16 +10,13 @@ html {
 
 /***************FOOTER***************/
 
-footer {
-  grid-area: footer;
-}
 
 footer h3 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.699);
   height: 50px;
   line-height: 50px;
-  font-size: 13px;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -42,10 +39,6 @@ body {
   color: #29313a8f;
   background-color: #192c4228;
   border-radius: 5px;
-}
-
-.nav-link:hover {
-  margin: 0.5px;
 }
 
 .navbar-brand img {
@@ -128,6 +121,8 @@ body {
   padding-bottom: 15px;
   object-fit: cover;
 }
+
+
 
 /****************BIBLIOTECA**********/
 
@@ -328,6 +323,8 @@ body {
   width: 85%;
   box-shadow: 5px 1px 5px;
 }
+
+
 
 .redes {
   margin-top: 30px;
