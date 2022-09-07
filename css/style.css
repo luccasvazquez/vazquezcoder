@@ -1,3 +1,4 @@
+/* BIBLIOTECA */
 .caja3 {
   background-color: white;
   font-size: 1.5rem;
@@ -34,50 +35,137 @@
       text-decoration: underline;
       color: white; }
   .caja3 .album .historia {
-    background-image: url(../img/historia.jpg);
-    background-size: cover; }
+    background-image: url(../img/historia.jpg); }
     .caja3 .album .historia:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .agorismo {
-    background-image: url(../img/agorismo.jpg);
-    background-size: cover; }
+    background-image: url(../img/agorismo.jpg); }
     .caja3 .album .agorismo:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .politica {
-    background-image: url(../img/politica.jpg);
-    background-size: cover; }
+    background-image: url(../img/politica.jpg); }
     .caja3 .album .politica:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .ciencias {
-    background-image: url(../img/ciencias.jpg);
-    background-size: cover; }
+    background-image: url(../img/ciencias.jpg); }
     .caja3 .album .ciencias:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .nutricion {
-    background-image: url(../img/nutricion.jpg);
-    background-size: cover; }
+    background-image: url(../img/nutricion.jpg); }
     .caja3 .album .nutricion:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .psicologia {
-    background-image: url(../img/psicologia.png);
-    background-size: contain; }
+    background-image: url(../img/psicologia.png); }
     .caja3 .album .psicologia:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .programacion {
-    background-image: url(../img/programacion.jpg);
-    background-size: cover; }
+    background-image: url(../img/programacion.jpg); }
     .caja3 .album .programacion:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .oficios {
-    background-image: url(../img/oficios.jpg);
-    background-size: cover; }
+    background-image: url(../img/oficios.jpg); }
     .caja3 .album .oficios:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .filosofia {
-    background-image: url(../img/filosfia.jpg);
-    background-size: cover; }
+    background-image: url(../img/filosfia.jpg); }
     .caja3 .album .filosofia:hover {
       transform: translate(1px, -1px); }
   .caja3 .album .articletittle {
     font-size: 3.4rem;
     text-shadow: 1px 1px black; }
+
+/***************PETICIONES***************/
+.caja6 {
+  background: #0423428f;
+  padding: 50px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 210px;
+  width: 50%;
+  display: flex;
+  flex-flow: column; }
+  .caja6 .form-control {
+    width: 100%;
+    padding: 12px; }
+  .caja6 .form-label {
+    text-transform: lowercase;
+    color: white; }
+  .caja6 .form-check-label {
+    font-size: 1.4rem;
+    text-transform: lowercase;
+    color: white; }
+  .caja6 .btn-primary {
+    background: #6c8f31;
+    margin-bottom: 16px;
+    border: 1px solid #026404;
+    color: white;
+    font-size: 2rem; }
+    .caja6 .btn-primary:hover {
+      transform: translate(1px, 1px); }
+
+/*ACERCADENOSOTROS*/
+.caja7 {
+  width: 80%;
+  background-color: white;
+  padding: 30px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 7%;
+  width: 85%; }
+  .caja7 .redes {
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center; }
+    .caja7 .redes a {
+      text-decoration: none;
+      padding: 6px;
+      margin-inline: 7px;
+      color: white;
+      text-align: center;
+      border: #1f53c5 unset 1px;
+      border-radius: 5px;
+      background-color: #1f53c5; }
+    .caja7 .redes li {
+      list-style-type: none; }
+
+/* MAP - GET */
+/* BIBLIOTECA */
+.album .historia {
+  background-size: cover; }
+
+.album .agorismo {
+  background-size: cover; }
+
+.album .politica {
+  background-size: cover; }
+
+.album .ciencias {
+  background-size: cover; }
+
+.album .nutricion {
+  background-size: cover; }
+
+.album .psicologia {
+  background-size: contain; }
+
+.album .programacion {
+  background-size: cover; }
+
+.album .oficios {
+  background-size: cover; }
+
+.album .filosofia {
+  background-size: cover; }
+
+.caja6 {
+  box-shadow: 5px 1px 5px;
+  font-size: 1.5rem; }
+  .caja6 .form-control {
+    font-size: 1.5rem; }
+
+.caja7 {
+  box-shadow: 5px 1px 5px;
+  font-size: 1.5rem; }
