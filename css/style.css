@@ -1,80 +1,124 @@
-/* BIBLIOTECA */
-.caja3 {
-  background-color: white;
-  font-size: 1.5rem;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 3%;
-  width: 85%;
-  box-shadow: 5px 1px 5px; }
-  .caja3 .cabecera {
-    text-align: center;
-    color: white;
-    background-color: #24303c;
-    padding: 20px; }
-    .caja3 .cabecera .casilla {
-      width: 50%;
-      border-radius: 6px;
-      padding: 5px;
-      margin-bottom: 15px;
-      border-style: unset; }
-    .caja3 .cabecera .botonBuscar {
-      background-color: #0b6a84;
-      color: white;
-      text-align: center;
-      padding: 5px;
-      border-radius: 6px;
-      border: 1px #0047ab solid;
-      margin-left: 5px; }
-    .caja3 .cabecera p {
-      font-size: 1.2rem;
-      text-transform: lowercase; }
-    .caja3 .cabecera a {
-      font-size: 1.2rem;
-      font-style: italic;
-      text-decoration: underline;
-      color: white; }
-  .caja3 .album .historia {
-    background-image: url(../img/historia.jpg); }
-    .caja3 .album .historia:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .agorismo {
-    background-image: url(../img/agorismo.jpg); }
-    .caja3 .album .agorismo:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .politica {
-    background-image: url(../img/politica.jpg); }
-    .caja3 .album .politica:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .ciencias {
-    background-image: url(../img/ciencias.jpg); }
-    .caja3 .album .ciencias:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .nutricion {
-    background-image: url(../img/nutricion.jpg); }
-    .caja3 .album .nutricion:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .psicologia {
-    background-image: url(../img/psicologia.png); }
-    .caja3 .album .psicologia:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .programacion {
-    background-image: url(../img/programacion.jpg); }
-    .caja3 .album .programacion:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .oficios {
-    background-image: url(../img/oficios.jpg); }
-    .caja3 .album .oficios:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .filosofia {
-    background-image: url(../img/filosfia.jpg); }
-    .caja3 .album .filosofia:hover {
-      transform: translate(1px, -1px); }
-  .caja3 .album .articletittle {
-    font-size: 3.4rem;
-    text-shadow: 1px 1px black; }
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
 
-/***************PETICIONES***************/
+html {
+  font-size: 62.5%;
+  height: 100%;
+  overflow: scroll; }
+
+/* INDEX */
+.contenedor0 {
+  background: linear-gradient(to right, #304352, #d7d2cc);
+  font-family: "Alegreya Sans SC", sans-serif; }
+  .contenedor0 .caja1 {
+    padding: 30px;
+    padding-bottom: 10px; }
+    .contenedor0 .caja1 .destacados {
+      text-align: center; }
+    .contenedor0 .caja1 .botonVermas {
+      color: white;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #1f53c5;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      background-color: #1f53c5;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedor0 .caja1 .botonVermas:hover {
+        background-color: #17419a;
+        transform: translate(1px, 1px); }
+    .contenedor0 .caja1 .carousel-item {
+      background: linear-gradient(to right, #1d2730, #63605e);
+      margin: auto; }
+    .contenedor0 .caja1 .d-block {
+      height: 300px;
+      width: 200px;
+      margin: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      object-fit: cover; }
+  .contenedor0 .navbar-brand {
+    font-size: 2rem; }
+    .contenedor0 .navbar-brand img {
+      margin-right: 8px; }
+  .contenedor0 .nav-item {
+    font-size: 1.6rem; }
+    .contenedor0 .nav-item:hover {
+      color: #29313a8f;
+      background-color: #192c4228;
+      border-radius: 5px; }
+    .contenedor0 .nav-item .active {
+      background-color: #1f5a95dc;
+      border-radius: 5px; }
+
+/* BIBLIOTECA */
+.caja3 .cabecera {
+  text-align: center;
+  color: white;
+  background-color: #24303c;
+  padding: 20px; }
+  .caja3 .cabecera .casilla {
+    width: 50%;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-style: unset; }
+  .caja3 .cabecera .botonBuscar {
+    background-color: #0b6a84;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px #0047ab solid;
+    margin-left: 5px; }
+  .caja3 .cabecera p {
+    font-size: 1.2rem;
+    text-transform: lowercase; }
+  .caja3 .cabecera a {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: white; }
+
+.caja3 .album .historia, .caja3 .album .agorismo, .caja3 .album .politica, .caja3 .album .ciencias, .caja3 .album .nutricion, .caja3 .album .psicologia, .caja3 .album .programacion, .caja3 .album .oficios, .caja3 .album .filosofia {
+  background-image: url(../img/historia.jpg); }
+
+.caja3 .album .agorismo {
+  background-image: url(../img/agorismo.jpg); }
+
+.caja3 .album .politica {
+  background-image: url(../img/politica.jpg); }
+
+.caja3 .album .ciencias {
+  background-image: url(../img/ciencias.jpg); }
+
+.caja3 .album .nutricion {
+  background-image: url(../img/nutricion.jpg); }
+
+.caja3 .album .psicologia {
+  background-image: url(../img/psicologia.png); }
+
+.caja3 .album .programacion {
+  background-image: url(../img/programacion.jpg); }
+
+.caja3 .album .oficios {
+  background-image: url(../img/oficios.jpg); }
+
+.caja3 .album .filosofia {
+  background-image: url(../img/filosfia.jpg); }
+
+.caja3 .album .articletittle {
+  font-size: 3.4rem;
+  text-shadow: 1px 1px black; }
+
+/* PETICIONES */
 .caja6 {
   background: #0423428f;
   padding: 50px;
@@ -103,15 +147,9 @@
     .caja6 .btn-primary:hover {
       transform: translate(1px, 1px); }
 
-/*ACERCADENOSOTROS*/
+/* ACERCADENOSOTROS */
 .caja7 {
-  width: 80%;
-  background-color: white;
-  padding: 30px;
-  margin: auto;
-  margin-top: 3%;
-  margin-bottom: 7%;
-  width: 85%; }
+  padding: 30px; }
   .caja7 .redes {
     margin-top: 30px;
     margin-bottom: 0;
@@ -131,9 +169,49 @@
     .caja7 .redes li {
       list-style-type: none; }
 
-/* MAP - GET */
+/* AUDIOVISUAL */
+.cajaCarousel {
+  width: 100%;
+  padding: 8%;
+  padding-bottom: 20%;
+  box-shadow: 1px 1px 1px;
+  background-color: rgba(0, 0, 0, 0.578); }
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.699); }
+  footer h3 {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: white; }
+
+/*********MEDIA QUERY***********/
+@media (max-width: 768px) {
+  .col-md-5 {
+    display: none; }
+  .caja6 {
+    margin-top: 100px;
+    margin-bottom: 20px; }
+    .caja6 .botons {
+      width: 200px; }
+  .caja7 h3 {
+    text-align: center; }
+  footer {
+    display: none; } }
+
+.caja1 {
+  background-color: white;
+  box-shadow: 5px 1px 5px; }
+  .caja1 p {
+    font-size: 1.5rem; }
+
 /* BIBLIOTECA */
-.album .historia {
+.caja3 {
+  background-color: white;
+  font-size: 1.5rem; }
+
+.album .historia, .album .agorismo, .album .politica, .album .ciencias, .album .nutricion, .album .psicologia, .album .programacion, .album .oficios, .album .filosofia {
   background-size: cover; }
 
 .album .agorismo {
@@ -167,5 +245,30 @@
     font-size: 1.5rem; }
 
 .caja7 {
+  background-color: white;
   box-shadow: 5px 1px 5px;
   font-size: 1.5rem; }
+
+footer h3 {
+  font-size: 1.5rem; }
+
+.historia:hover, .agorismo:hover, .politica:hover, .ciencias:hover, .nutricion:hover, .psicologia:hover, .programacion:hover, .oficios:hover, .filosofia:hover {
+  transform: translate(1px, -1px); }
+
+.caja1 {
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 85%; }
+
+.caja3 {
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 85%; }
+
+.caja7 {
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 85%; }

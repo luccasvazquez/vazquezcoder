@@ -1,9 +1,26 @@
-/* MAP - GET */
+//* MAP - GET *//
 
-$estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover);
+$estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover, backColor:  rgb(255, 255, 255));
+
+
+.caja1 {
+  background-color: map-get($estilo, backColor);
+  box-shadow: map-get($estilo, boxShadow);
+
+  p {
+    font-size: map-get($estilo, tamFuente);
+  }
+
+}
 
 
 /* BIBLIOTECA */
+
+.caja3 {
+  background-color: map-get($estilo, backColor);
+  font-size: map-get($estilo, tamFuente);
+  box-shadow: map-get($estilo, boxshadow);
+}
 
 .album {
     .historia {
@@ -55,13 +72,20 @@ $estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover);
     box-shadow: map-get($estilo, boxShadow);
     font-size: map-get($estilo, tamFuente);
 
-
     .form-control {
     font-size: map-get($estilo, tamFuente);
     }
 }
 
 .caja7 {
-    box-shadow: map-get($estilo, boxShadow);
-    font-size: map-get($estilo, tamFuente);
+  background-color: map-get($estilo, backColor);
+  box-shadow: map-get($estilo, boxShadow);
+  font-size: map-get($estilo, tamFuente);
+}
+
+
+footer {
+  h3 {
+  font-size: map-get($estilo, tamFuente);
+  }
 }

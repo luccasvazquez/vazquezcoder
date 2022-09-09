@@ -1,0 +1,39 @@
+///* EXTEND *//
+
+.historia {
+    &:hover {
+        transform: translate(1px, -1px);
+    }
+  }
+
+.agorismo {
+    @extend .historia;
+}
+
+.politica {
+    @extend .historia;
+}
+
+.ciencias {
+    @extend .historia;
+}
+
+.nutricion {
+    @extend .historia;
+}
+
+.psicologia {
+    @extend .historia;
+}
+
+.programacion {
+    @extend .historia;
+}
+
+.oficios {
+    @extend .historia;
+}
+
+.filosofia {
+    @extend .historia;
+}

@@ -1,0 +1,20 @@
+//* MIXIN * //
+
+@mixin ajustes {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 85%;
+}
+
+.caja1 {
+    @include ajustes;
+}
+
+.caja3 {
+    @include ajustes;
+}
+
+.caja7 {
+    @include ajustes;
+}
