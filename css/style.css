@@ -49,6 +49,20 @@ html {
         margin-bottom: 7%;
         margin-right: 1.5%;
         margin-left: 28%; }
+  .contenedor0 .card {
+    height: 375px;
+    font-size: 1.3rem; }
+    .contenedor0 .card .verseccion {
+      position: absolute;
+      bottom: 5%;
+      left: 37%; }
+      .contenedor0 .card .verseccion .btn {
+        background-color: #283945;
+        border: #283945; }
+        .contenedor0 .card .verseccion .btn:hover {
+          background-color: #283945cb; }
+    .contenedor0 .card p {
+      padding: 25px; }
   .contenedor0 .destacados {
     text-transform: uppercase;
     font-weight: bolder;
@@ -65,12 +79,15 @@ html {
       margin-bottom: 5%; }
   .contenedor0 .vermas {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     margin-right: 5%; }
     .contenedor0 .vermas .btn {
       font-size: 1.4rem;
-      font-weight: bolder;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      border: #0f1959 solid 1px;
+      background-color: #0f1959e7; }
+      .contenedor0 .vermas .btn a {
+        color: white; }
 
 .navbar-brand {
   font-size: 2rem; }
@@ -122,11 +139,10 @@ html {
   .caja3 .card-body .verseccion {
     position: absolute;
     bottom: 5%;
-    display: flex; }
+    left: 37%; }
     .caja3 .card-body .verseccion .btn {
       background-color: #283945;
-      border: #283945;
-      display: flex; }
+      border: #283945; }
       .caja3 .card-body .verseccion .btn:hover {
         background-color: #283945cb; }
 
@@ -227,7 +243,7 @@ html {
 .cajaCarousel {
   width: 100%;
   box-shadow: 1px 1px 1px;
-  background-color: rgba(0, 0, 0, 0.578); }
+  background-color: rgba(0, 0, 0, 0.804); }
   .cajaCarousel h1 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -250,27 +266,91 @@ html {
     box-shadow: 5px 5px 5px #3f3e3e; }
 
 /* FOOTER */
-footer {
-  background-color: rgba(0, 0, 0, 0.699); }
-  footer h3 {
+.footer {
+  background-color: rgba(0, 0, 0, 0.596);
+  padding: 1%;
+  display: grid;
+  grid-template-areas: "enlaces copy copy redes" "enlaces copy copy redes" "enlaces copy copy redes" "enlaces copy copy redes"; }
+  .footer .copy {
+    grid-area: copy;
+    color: white;
+    font-size: 0.9rem;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
-    color: white; }
+    margin: auto;
+    text-shadow: #000 1px;
+    text-transform: uppercase; }
+  .footer .enlaces {
+    grid-area: enlaces;
+    margin-top: 5%; }
+    .footer .enlaces li {
+      list-style-type: none; }
+      .footer .enlaces li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 0px;
+        text-shadow: #000 1px; }
+  .footer .redes-footer {
+    grid-area: redes;
+    margin: auto; }
+    .footer .redes-footer a {
+      padding: 15px;
+      color: #1a2049; }
 
 /*********MEDIA QUERY***********/
 @media (max-width: 768px) {
-  .col-md-5 {
+  .welcome {
+    background-image: none !important; }
+    .welcome .texth1 {
+      width: 100% !important; }
+  .caja1 .card {
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .caja1 .card .verseccion .btn {
+      margin-left: 14px; }
+    .caja1 .card .verseccion p {
+      text-align: center; }
+  .caja3 .col {
+    height: 400px; }
+    .caja3 .col .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .caja3 .col .card .card-body {
+        height: 325px; }
+        .caja3 .col .card .card-body .verseccion {
+          left: 32%;
+          bottom: 0.5%;
+          margin-bottom: 10px; }
+  .footer {
     display: none; }
-  .caja6 {
-    margin-top: 100px;
-    margin-bottom: 20px; }
-    .caja6 .botons {
-      width: 200px; }
-  .caja7 h3 {
+  .container-pet {
+    margin: 0%;
+    width: 100%; }
+    .container-pet .container-form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 8%; }
+      .container-pet .container-form .form-peticiones {
+        margin: 0%;
+        margin-bottom: 8%;
+        width: 80%; }
+      .container-pet .container-form .form-comentarios {
+        width: 65%; }
+  .cajaCarousel {
     text-align: center; }
-  footer {
-    display: none; } }
+    .cajaCarousel .subtitulo {
+      padding-right: 0; }
+    .cajaCarousel iframe {
+      height: 350px; }
+    .cajaCarousel .spotify {
+      width: 390px;
+      height: 420px;
+      margin: auto; } }
 
 .caja1 {
   background-color: white;
