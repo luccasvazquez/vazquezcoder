@@ -1,7 +1,11 @@
 //* MAP - GET *//
 
-$estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover, backColor:  rgb(255, 255, 255));
-
+$estilo: (
+  boxShadow: 5px 1px 5px,
+  tamFuente: 1.5rem,
+  backSize: cover,
+  backColor: rgb(255, 255, 255),
+);
 
 .caja1 {
   background-color: map-get($estilo, backColor);
@@ -12,7 +16,6 @@ $estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover, backColor:
   }
 }
 
-
 /* BIBLIOTECA */
 
 .caja3 {
@@ -22,58 +25,50 @@ $estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover, backColor:
 }
 
 .album {
-    .historia {
-        background-size: map-get($estilo, backSize );
-      }
-
-    .agorismo {
-        background-size: map-get($estilo, backSize ); 
-      }  
-      
-      .politica {
-        background-size: map-get($estilo, backSize ); 
-    }
-
-      .ciencias {
-        background-size: map-get($estilo, backSize ); 
-      }
-      
-
-      .nutricion {
-        background-size: map-get($estilo, backSize ); 
-      }
-
-      
-      .psicologia {
-        background-size:contain;
-      }
-
-      
-      .programacion {
-        background-size: map-get($estilo, backSize ); 
-      }
-
-      
-      .oficios {
-        background-size: map-get($estilo, backSize ); 
-      }
-
-      
-      .filosofia {
-        background-size: map-get($estilo, backSize ); 
-      }
-
+  .historia {
+    background-size: map-get($estilo, backSize);
   }
-  
 
+  .agorismo {
+    background-size: map-get($estilo, backSize);
+  }
+
+  .politica {
+    background-size: map-get($estilo, backSize);
+  }
+
+  .ciencias {
+    background-size: map-get($estilo, backSize);
+  }
+
+  .nutricion {
+    background-size: map-get($estilo, backSize);
+  }
+
+  .psicologia {
+    background-size: contain;
+  }
+
+  .programacion {
+    background-size: map-get($estilo, backSize);
+  }
+
+  .oficios {
+    background-size: map-get($estilo, backSize);
+  }
+
+  .filosofia {
+    background-size: map-get($estilo, backSize);
+  }
+}
 
 .caja6 {
-    box-shadow: map-get($estilo, boxShadow);
-    font-size: map-get($estilo, tamFuente);
+  box-shadow: map-get($estilo, boxShadow);
+  font-size: map-get($estilo, tamFuente);
 
-    .form-control {
+  .form-control {
     font-size: map-get($estilo, tamFuente);
-    }
+  }
 }
 
 .caja7 {
@@ -82,9 +77,8 @@ $estilo: (boxShadow: 5px 1px 5px, tamFuente: 1.5rem, backSize: cover, backColor:
   font-size: map-get($estilo, tamFuente);
 }
 
-
 footer {
   h3 {
-  font-size: map-get($estilo, tamFuente);
+    font-size: map-get($estilo, tamFuente);
   }
 }
