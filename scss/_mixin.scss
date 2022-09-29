@@ -7,12 +7,73 @@
     width: 85%;
 }
 
+@mixin album {
+        .historia {
+            background-image: url(../img/historia.jpg);
+          }
+    
+        .agorismo {
+            background-image: url(../img/agorismo.jpg);
+          }  
+          
+          .politica {
+            background-image: url(../img/politica.jpg);
+          }
+    
+          .ciencias {
+            background-image: url(../img/ciencias.jpg);
+          }
+          
+    
+          .nutricion {
+            background-image: url(../img/nutricion.jpg);
+          }
+    
+          
+          .psicologia {
+            background-image: url(../img/psicologia.png);
+          }
+    
+          
+          .programacion {
+            background-image: url(../img/programacion.jpg);
+          }
+    
+          
+          .oficios {
+            background-image: url(../img/oficios.jpg);
+          }
+    
+          
+          .filosofia {
+            background-image: url(../img/filosfia.jpg);
+          }
+          
+          .articletittle {
+            font-size: 3.4rem;
+            text-shadow: 1px 1px rgb(0, 0, 0);
+          }
+}
+
+@mixin fuente {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  @include fuente;
+}
+
+
 .caja1 {
     @include ajustes;
+        .album  {
+            @include album;
+        }
 }
 
 .caja3 {
     @include ajustes;
+    @include album;
 }
 
 .caja7 {

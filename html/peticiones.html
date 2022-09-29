@@ -16,6 +16,8 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Social icons -->
+     <script src="https://kit.fontawesome.com/202dc8fe15.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="contenedor0">
@@ -70,28 +72,36 @@
       </div>
     </nav>
 
-    <form class="caja6 mb-10">
-      <div class="mb-3">
-        <label for="libro" class="form-label">Titulo del libro</label>
-        <input
-          type="text"
-          class="form-control"
-          id="libro"
-          aria-describedby="emailHelp"
-        />
-      </div>
-      <div class="mb-4">
-        <label for="autor" class="form-label">Autor</label>
-        <input type="text" class="form-control" id="autor" />
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1"
-          >Acepto los terminos y condiciones.</label
-        >
-      </div>
-      <button type="submit" class="btn btn-primary mt-5 mb-0">Enviar</button>
-    </form>
+    <main class="container-pet">
+      <div class="container-form">
+        
+      <section class="form-peticiones">
+          <h1>Contacta a nuestro soporte.</h1>
+          <p>En esta sección vas a poder realizar solicitudes de libros para sumar a nuestra biblioteca.</p> 
+          <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre y Apellido">
+          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+          <input class="controls" type="text" name="libro" id="libro" placeholder="Ingrese el nombre del libro">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Nota</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+          </div>
+          <input class="botons1" type="submit" value="Enviar petición">
+      </section>
+
+      <section class="form-comentarios">
+        <p>Envianos un comentario para mejorar nuestro sitio.</p>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Escribe tu comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>        
+        <input class="botons2" type="submit" value="Enviar comentario">
+      </section>
+    </div>
+
+ 
+    </main>
 
     <footer class="footer">
       <h3>Copyright &copy; BeStoic - 2022. Todos los derechos reservados.</h3>

@@ -12,51 +12,80 @@ html {
 .contenedor0 {
   background: linear-gradient(to right, #304352, #d7d2cc);
   font-family: "Alegreya Sans SC", sans-serif; }
-  .contenedor0 .caja1 {
+  .contenedor0 main {
     padding: 30px;
     padding-bottom: 10px; }
-    .contenedor0 .caja1 .destacados {
-      text-align: center; }
-    .contenedor0 .caja1 .botonVermas {
-      color: white;
-      font-size: 1.4rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      border: 1px solid #1f53c5;
-      border-radius: 5px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      background-color: #1f53c5;
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .contenedor0 .caja1 .botonVermas:hover {
-        background-color: #17419a;
-        transform: translate(1px, 1px); }
-    .contenedor0 .caja1 .carousel-item {
-      background: linear-gradient(to right, #1d2730, #63605e);
-      margin: auto; }
-    .contenedor0 .caja1 .d-block {
+    .contenedor0 main .welcome {
+      padding: 2%;
+      background-image: url(../img/logo.jpg);
+      background-size: 35%;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-color: #020f490c; }
+      .contenedor0 main .welcome .texth1 {
+        width: 55%; }
+        .contenedor0 main .welcome .texth1 .cita {
+          text-align: center;
+          font-style: oblique;
+          padding: 5px; }
+    .contenedor0 main .parrafo-uno {
+      margin-top: 3%; }
+      .contenedor0 main .parrafo-uno .subtittle1 {
+        font-size: 3rem; }
+      .contenedor0 main .parrafo-uno p {
+        margin-top: 2%;
+        margin-bottom: 5%;
+        margin-right: 28%; }
+    .contenedor0 main .parrafo-dos {
+      margin-top: 3%; }
+      .contenedor0 main .parrafo-dos .subtittle2 {
+        text-align: end;
+        margin-right: 2%;
+        font-size: 3rem; }
+      .contenedor0 main .parrafo-dos p {
+        text-align: start;
+        font-style: italic;
+        margin-top: 2%;
+        margin-bottom: 7%;
+        margin-right: 1.5%;
+        margin-left: 28%; }
+  .contenedor0 .destacados {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center; }
+  .contenedor0 .carousel {
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    background: linear-gradient(to right, #283945, #afaaa5); }
+    .contenedor0 .carousel .d-block {
+      object-fit: contain;
       height: 300px;
-      width: 200px;
-      margin: auto;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      object-fit: cover; }
-  .contenedor0 .navbar-brand {
-    font-size: 2rem; }
-    .contenedor0 .navbar-brand img {
-      margin-right: 8px; }
-  .contenedor0 .nav-item {
-    font-size: 1.6rem; }
-    .contenedor0 .nav-item:hover {
-      color: #29313a8f;
-      background-color: #192c4228;
-      border-radius: 5px; }
-    .contenedor0 .nav-item .active {
-      background-color: #1f5a95dc;
-      border-radius: 5px; }
+      margin-top: 5%;
+      margin-bottom: 5%; }
+  .contenedor0 .vermas {
+    display: flex;
+    justify-content: end;
+    margin-right: 5%; }
+    .contenedor0 .vermas .btn {
+      font-size: 1.4rem;
+      font-weight: bolder;
+      text-transform: uppercase; }
+
+.navbar-brand {
+  font-size: 2rem; }
+  .navbar-brand img {
+    margin-right: 8px; }
+
+.nav-item {
+  font-size: 1.6rem; }
+  .nav-item:hover {
+    color: #29313a8f;
+    background-color: #192c4228;
+    border-radius: 5px; }
+  .nav-item .active {
+    background-color: #1f5a95dc;
+    border-radius: 5px; }
 
 /* BIBLIOTECA */
 .caja3 .cabecera {
@@ -87,95 +116,138 @@ html {
     text-decoration: underline;
     color: white; }
 
-.caja3 .album .historia, .caja3 .album .agorismo, .caja3 .album .politica, .caja3 .album .ciencias, .caja3 .album .nutricion, .caja3 .album .psicologia, .caja3 .album .programacion, .caja3 .album .oficios, .caja3 .album .filosofia {
-  background-image: url(../img/historia.jpg); }
-
-.caja3 .album .agorismo {
-  background-image: url(../img/agorismo.jpg); }
-
-.caja3 .album .politica {
-  background-image: url(../img/politica.jpg); }
-
-.caja3 .album .ciencias {
-  background-image: url(../img/ciencias.jpg); }
-
-.caja3 .album .nutricion {
-  background-image: url(../img/nutricion.jpg); }
-
-.caja3 .album .psicologia {
-  background-image: url(../img/psicologia.png); }
-
-.caja3 .album .programacion {
-  background-image: url(../img/programacion.jpg); }
-
-.caja3 .album .oficios {
-  background-image: url(../img/oficios.jpg); }
-
-.caja3 .album .filosofia {
-  background-image: url(../img/filosfia.jpg); }
-
-.caja3 .album .articletittle {
-  font-size: 3.4rem;
-  text-shadow: 1px 1px black; }
+.caja3 .card-body {
+  height: 165px;
+  font-size: 1.3rem; }
+  .caja3 .card-body .verseccion {
+    position: absolute;
+    bottom: 5%;
+    display: flex; }
+    .caja3 .card-body .verseccion .btn {
+      background-color: #283945;
+      border: #283945;
+      display: flex; }
+      .caja3 .card-body .verseccion .btn:hover {
+        background-color: #283945cb; }
 
 /* PETICIONES */
-.caja6 {
-  background: #0423428f;
-  padding: 50px;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 210px;
-  width: 50%;
-  display: flex;
-  flex-flow: column; }
-  .caja6 .form-control {
-    width: 100%;
-    padding: 12px; }
-  .caja6 .form-label {
-    text-transform: lowercase;
-    color: white; }
-  .caja6 .form-check-label {
-    font-size: 1.4rem;
-    text-transform: lowercase;
-    color: white; }
-  .caja6 .btn-primary {
-    background: #6c8f31;
-    margin-bottom: 16px;
-    border: 1px solid #026404;
-    color: white;
-    font-size: 2rem; }
-    .caja6 .btn-primary:hover {
-      transform: translate(1px, 1px); }
+.container-pet {
+  margin-bottom: 8%;
+  margin-top: 3%; }
+  .container-pet .container-form {
+    display: flex;
+    flex-direction: row; }
+    .container-pet .container-form .form-peticiones {
+      width: 50%;
+      background: #24303c;
+      padding: 30px;
+      border-radius: 4px;
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+      margin-right: 20px; }
+      .container-pet .container-form .form-peticiones h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-bottom: 20px; }
+      .container-pet .container-form .form-peticiones .controls {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-size: 1.5rem;
+        color: white; }
+      .container-pet .container-form .form-peticiones p {
+        height: 40px;
+        font-size: 1.4rem;
+        line-height: 40px; }
+      .container-pet .container-form .form-peticiones .botons1 {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        font-size: 16px;
+        margin-top: 85px; }
+      .container-pet .container-form .form-peticiones .form-label {
+        font-size: 1.3rem; }
+    .container-pet .container-form .form-comentarios {
+      width: 50%;
+      height: 20%;
+      background: #24303c;
+      padding: 30px;
+      border-radius: 4px;
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+      margin-left: 20px; }
+      .container-pet .container-form .form-comentarios .controls {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-size: 1.5rem;
+        color: white; }
+      .container-pet .container-form .form-comentarios p {
+        height: 40px;
+        font-size: 1.4rem;
+        line-height: 40px; }
+        .container-pet .container-form .form-comentarios p a {
+          color: white;
+          text-decoration: none; }
+          .container-pet .container-form .form-comentarios p a:hover {
+            color: white;
+            text-decoration: underline; }
+      .container-pet .container-form .form-comentarios .botons2 {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin-top: 55px;
+        font-size: 16px; }
+      .container-pet .container-form .form-comentarios .form-label {
+        font-size: 1.3rem; }
 
 /* ACERCADENOSOTROS */
 .caja7 {
   padding: 30px; }
   .caja7 .redes {
-    margin-top: 30px;
-    margin-bottom: 0;
     display: flex;
-    flex-direction: row;
-    flex-flow: row;
     justify-content: center; }
     .caja7 .redes a {
-      text-decoration: none;
-      padding: 6px;
-      margin-inline: 7px;
-      color: white;
-      text-align: center;
-      border: #1f53c5 unset 1px;
-      border-radius: 5px;
-      background-color: #1f53c5; }
-    .caja7 .redes li {
-      list-style-type: none; }
+      margin: 2%; }
+      .caja7 .redes a i:hover {
+        transition: 0.2s;
+        transform: translate(0.5px, -0.5px); }
 
 /* AUDIOVISUAL */
 .cajaCarousel {
   width: 100%;
-  padding: 8%;
-  padding-bottom: 20%;
   box-shadow: 1px 1px 1px;
   background-color: rgba(0, 0, 0, 0.578); }
+  .cajaCarousel h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white; }
+  .cajaCarousel p {
+    color: white;
+    font-size: 1.4rem;
+    padding-right: 25%; }
+  .cajaCarousel .carousel {
+    width: 85%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 8%;
+    box-shadow: 5px 5px 5px #3f3e3e; }
+    .cajaCarousel .carousel .carousel-indicators {
+      height: 15px; }
+  .cajaCarousel .spotify {
+    margin-left: 20%;
+    margin-bottom: 15%;
+    box-shadow: 5px 5px 5px #3f3e3e; }
 
 /* FOOTER */
 footer {
@@ -255,17 +327,62 @@ footer h3 {
 .historia:hover, .agorismo:hover, .politica:hover, .ciencias:hover, .nutricion:hover, .psicologia:hover, .programacion:hover, .oficios:hover, .filosofia:hover {
   transform: translate(1px, -1px); }
 
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 .caja1 {
   margin: auto;
   margin-top: 2%;
   margin-bottom: 3%;
   width: 85%; }
+  .caja1 .album .historia, .caja1 .album .agorismo, .caja1 .album .politica, .caja1 .album .ciencias, .caja1 .album .nutricion, .caja1 .album .psicologia, .caja1 .album .programacion, .caja1 .album .oficios, .caja1 .album .filosofia {
+    background-image: url(../img/historia.jpg); }
+  .caja1 .album .agorismo {
+    background-image: url(../img/agorismo.jpg); }
+  .caja1 .album .politica {
+    background-image: url(../img/politica.jpg); }
+  .caja1 .album .ciencias {
+    background-image: url(../img/ciencias.jpg); }
+  .caja1 .album .nutricion {
+    background-image: url(../img/nutricion.jpg); }
+  .caja1 .album .psicologia {
+    background-image: url(../img/psicologia.png); }
+  .caja1 .album .programacion {
+    background-image: url(../img/programacion.jpg); }
+  .caja1 .album .oficios {
+    background-image: url(../img/oficios.jpg); }
+  .caja1 .album .filosofia {
+    background-image: url(../img/filosfia.jpg); }
+  .caja1 .album .articletittle {
+    font-size: 3.4rem;
+    text-shadow: 1px 1px black; }
 
 .caja3 {
   margin: auto;
   margin-top: 2%;
   margin-bottom: 3%;
   width: 85%; }
+  .caja3 .historia, .caja3 .agorismo, .caja3 .politica, .caja3 .ciencias, .caja3 .nutricion, .caja3 .psicologia, .caja3 .programacion, .caja3 .oficios, .caja3 .filosofia {
+    background-image: url(../img/historia.jpg); }
+  .caja3 .agorismo {
+    background-image: url(../img/agorismo.jpg); }
+  .caja3 .politica {
+    background-image: url(../img/politica.jpg); }
+  .caja3 .ciencias {
+    background-image: url(../img/ciencias.jpg); }
+  .caja3 .nutricion {
+    background-image: url(../img/nutricion.jpg); }
+  .caja3 .psicologia {
+    background-image: url(../img/psicologia.png); }
+  .caja3 .programacion {
+    background-image: url(../img/programacion.jpg); }
+  .caja3 .oficios {
+    background-image: url(../img/oficios.jpg); }
+  .caja3 .filosofia {
+    background-image: url(../img/filosfia.jpg); }
+  .caja3 .articletittle {
+    font-size: 3.4rem;
+    text-shadow: 1px 1px black; }
 
 .caja7 {
   margin: auto;
