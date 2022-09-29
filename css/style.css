@@ -77,17 +77,13 @@ html {
       height: 300px;
       margin-top: 5%;
       margin-bottom: 5%; }
-  .contenedor0 .vermas {
-    display: flex;
-    justify-content: center;
-    margin-right: 5%; }
-    .contenedor0 .vermas .btn {
-      font-size: 1.4rem;
-      text-transform: uppercase;
-      border: #0f1959 solid 1px;
-      background-color: #0f1959e7; }
-      .contenedor0 .vermas .btn a {
-        color: white; }
+  .contenedor0 .vermas .btn {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: #0f1959 solid 1px;
+    background-color: #0f1959e7; }
+    .contenedor0 .vermas .btn a {
+      color: white; }
 
 .navbar-brand {
   font-size: 2rem; }
@@ -132,19 +128,6 @@ html {
     font-style: italic;
     text-decoration: underline;
     color: white; }
-
-.caja3 .card-body {
-  height: 165px;
-  font-size: 1.3rem; }
-  .caja3 .card-body .verseccion {
-    position: absolute;
-    bottom: 5%;
-    left: 37%; }
-    .caja3 .card-body .verseccion .btn {
-      background-color: #283945;
-      border: #283945; }
-      .caja3 .card-body .verseccion .btn:hover {
-        background-color: #283945cb; }
 
 /* PETICIONES */
 .container-pet {

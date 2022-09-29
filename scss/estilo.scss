@@ -113,9 +113,6 @@ html {
   }
 
   .vermas {
-    display: flex;
-    justify-content: center;
-    margin-right: 5%;
     .btn {
       font-size: 1.4rem;
       text-transform: uppercase;
@@ -189,23 +186,6 @@ html {
       font-style: italic;
       text-decoration: underline;
       color: white;
-    }
-  }
-
-  .card-body {
-    height: 165px;
-    font-size: 1.3rem;
-    .verseccion {
-      position: absolute;
-      bottom: 5%;
-      left: 37%;
-      .btn {
-        background-color: #283945;
-        border: #283945;
-        &:hover {
-          background-color: #283945cb;
-        }
-      }
     }
   }
 }
