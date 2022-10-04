@@ -49,41 +49,69 @@ html {
         margin-bottom: 7%;
         margin-right: 1.5%;
         margin-left: 28%; }
-  .contenedor0 .card {
-    height: 375px;
-    font-size: 1.3rem; }
-    .contenedor0 .card .verseccion {
-      position: absolute;
-      bottom: 5%;
-      left: 37%; }
-      .contenedor0 .card .verseccion .btn {
-        background-color: #283945;
-        border: #283945; }
-        .contenedor0 .card .verseccion .btn:hover {
-          background-color: #283945cb; }
-    .contenedor0 .card p {
-      padding: 25px; }
-  .contenedor0 .destacados {
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center; }
-  .contenedor0 .carousel {
-    width: 90%;
-    margin: auto;
-    margin-top: 1%;
-    background: linear-gradient(to right, #283945, #afaaa5); }
-    .contenedor0 .carousel .d-block {
-      object-fit: contain;
-      height: 300px;
-      margin-top: 5%;
-      margin-bottom: 5%; }
-  .contenedor0 .vermas .btn {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    border: #0f1959 solid 1px;
-    background-color: #0f1959e7; }
-    .contenedor0 .vermas .btn a {
-      color: white; }
+    .contenedor0 main .estoico {
+      margin-top: 10%;
+      display: grid;
+      grid-template-areas: "sub sub video video" "sub sub video video" "sub sub video video"; }
+      .contenedor0 main .estoico .parrafo-tres {
+        grid-area: sub;
+        margin: auto; }
+        .contenedor0 main .estoico .parrafo-tres .subtittle3 {
+          font-size: 2.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+      .contenedor0 main .estoico iframe {
+        grid-area: video;
+        margin: auto; }
+    .contenedor0 main .card {
+      height: 375px;
+      font-size: 1.3rem; }
+      .contenedor0 main .card .verseccion {
+        position: absolute;
+        bottom: 5%;
+        left: 37%; }
+        .contenedor0 main .card .verseccion .btn {
+          background-color: #283945;
+          border: #283945; }
+          .contenedor0 main .card .verseccion .btn:hover {
+            background-color: #283945cb; }
+      .contenedor0 main .card p {
+        padding: 25px; }
+    .contenedor0 main .destacados {
+      text-transform: uppercase;
+      font-weight: bolder;
+      text-align: center; }
+    .contenedor0 main .carousel {
+      width: 95%;
+      margin: auto;
+      margin-top: 1%;
+      background: linear-gradient(to right, #283945, #afaaa5); }
+      .contenedor0 main .carousel .carousel-one {
+        background-color: rgba(220, 208, 185, 0.701); }
+      .contenedor0 main .carousel .carousel-two {
+        background-color: rgba(33, 24, 8, 0.701); }
+      .contenedor0 main .carousel .carousel-three {
+        background-color: #ccbc9a; }
+      .contenedor0 main .carousel .d-block {
+        object-fit: contain;
+        height: 300px;
+        margin-top: 5%;
+        margin-bottom: 5%; }
+    .contenedor0 main .vermas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 5%; }
+      .contenedor0 main .vermas .btn {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        border: #14248db9 solid 1px;
+        background-color: #151f64e7;
+        box-shadow: #000 1px 1px 1px; }
+        .contenedor0 main .vermas .btn a {
+          color: white;
+          text-decoration: none; }
 
 .navbar-brand {
   font-size: 2rem; }
@@ -253,14 +281,14 @@ html {
   background-color: rgba(0, 0, 0, 0.596);
   padding: 1%;
   display: grid;
-  grid-template-areas: "enlaces copy copy redes" "enlaces copy copy redes" "enlaces copy copy redes" "enlaces copy copy redes"; }
+  grid-template-areas: "enlaces copy copy copy redes" "enlaces copy copy copy redes" "enlaces copy copy copy redes" "enlaces copy copy copy redes" "enlaces copy copy copy redes"; }
   .footer .copy {
     grid-area: copy;
-    color: white;
+    color: #b7bcdf;
     font-size: 0.9rem;
     text-align: center;
     margin: auto;
-    text-shadow: #000 1px;
+    padding-top: 2.5%;
     text-transform: uppercase; }
   .footer .enlaces {
     grid-area: enlaces;
@@ -269,10 +297,8 @@ html {
       list-style-type: none; }
       .footer .enlaces li a {
         text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        padding: 0px;
-        text-shadow: #000 1px; }
+        color: #b7bcdf;
+        padding: 0px; }
   .footer .redes-footer {
     grid-area: redes;
     margin: auto; }
@@ -282,31 +308,55 @@ html {
 
 /*********MEDIA QUERY***********/
 @media (max-width: 768px) {
-  .welcome {
-    background-image: none !important; }
-    .welcome .texth1 {
-      width: 100% !important; }
-  .caja1 .card {
+  .contenedor0 main .welcome {
+    background-image: none; }
+    .contenedor0 main .welcome .texth1 {
+      width: 100%; }
+  .contenedor0 main .parrafo-uno {
+    text-align: start;
+    margin: 0%;
+    margin-top: 10%;
+    margin-bottom: 11%; }
+    .contenedor0 main .parrafo-uno p {
+      margin-right: 0%; }
+  .contenedor0 main .parrafo-dos {
+    margin: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%; }
+  .contenedor0 main .card {
     margin-bottom: 19px;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .caja1 .card .verseccion .btn {
-      margin-left: 14px; }
-    .caja1 .card .verseccion p {
-      text-align: center; }
-  .caja3 .col {
-    height: 400px; }
-    .caja3 .col .card {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .caja3 .col .card .card-body {
-        height: 325px; }
-        .caja3 .col .card .card-body .verseccion {
-          left: 32%;
-          bottom: 0.5%;
-          margin-bottom: 10px; }
+    .contenedor0 main .card .verseccion {
+      position: absolute;
+      bottom: 5%;
+      left: 40%; }
+    .contenedor0 main .card p {
+      text-align: center;
+      padding: 10px; }
+  .contenedor0 main .estoico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap; }
+    .contenedor0 main .estoico .subtittle3 {
+      margin-bottom: 2%; }
+  .caja3 .album .card {
+    margin: 0%;
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .caja3 .album .card .card-body {
+      height: 150px; }
+    .caja3 .album .card .verseccion {
+      position: absolute;
+      bottom: 5%;
+      left: 40%; }
+    .caja3 .album .card p {
+      text-align: center;
+      padding: 10px; }
   .footer {
     display: none; }
   .container-pet {
@@ -322,18 +372,26 @@ html {
         margin: 0%;
         margin-bottom: 8%;
         width: 80%; }
+        .container-pet .container-form .form-peticiones p {
+          height: max-content; }
       .container-pet .container-form .form-comentarios {
-        width: 65%; }
+        width: 65%;
+        margin: 0%; }
+        .container-pet .container-form .form-comentarios p {
+          height: max-content; }
   .cajaCarousel {
     text-align: center; }
     .cajaCarousel .subtitulo {
-      padding-right: 0; }
+      padding-right: 0;
+      margin-bottom: 10%; }
     .cajaCarousel iframe {
       height: 350px; }
     .cajaCarousel .spotify {
       width: 390px;
       height: 420px;
-      margin: auto; } }
+      margin: auto;
+      margin-top: 10%;
+      margin-bottom: 5%; } }
 
 .caja1 {
   background-color: white;
@@ -347,31 +405,39 @@ html {
   font-size: 1.5rem; }
 
 .album .historia, .album .agorismo, .album .politica, .album .ciencias, .album .nutricion, .album .psicologia, .album .programacion, .album .oficios, .album .filosofia {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .agorismo {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .politica {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .ciencias {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .nutricion {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .psicologia {
   background-size: contain; }
 
 .album .programacion {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .oficios {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .album .filosofia {
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .caja6 {
   box-shadow: 5px 1px 5px;

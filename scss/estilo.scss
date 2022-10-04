@@ -70,57 +70,101 @@ html {
         margin-left: 28%;
       }
     }
-  }
 
-  .card {
-    height: 375px;
-    font-size: 1.3rem;
-    .verseccion {
-      position: absolute;
-      bottom: 5%;
-      left: 37%;
-      .btn {
-        background-color: #283945;
-        border: #283945;
-        &:hover {
-          background-color: #283945cb;
+    .estoico {
+      margin-top: 10%;
+      display: grid;
+      grid-template-areas:
+        "sub sub video video"
+        "sub sub video video"
+        "sub sub video video";
+      .parrafo-tres {
+        grid-area: sub;
+        margin: auto;
+        .subtittle3 {
+          font-size: 2.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
+      iframe {
+        grid-area: video;
+        margin: auto;
+      }
     }
-    p {
-      padding: 25px;
+
+    .card {
+      height: 375px;
+      font-size: 1.3rem;
+
+      .verseccion {
+        position: absolute;
+        bottom: 5%;
+        left: 37%;
+
+        .btn {
+          background-color: #283945;
+          border: #283945;
+          &:hover {
+            background-color: #283945cb;
+          }
+        }
+      }
+
+      p {
+        padding: 25px;
+      }
     }
-  }
 
-  .destacados {
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  .carousel {
-    width: 90%;
-    margin: auto;
-    margin-top: 1%;
-    background: linear-gradient(to right, #283945, #afaaa5);
-
-    .d-block {
-      object-fit: contain;
-      height: 300px;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-  }
-
-  .vermas {
-    .btn {
-      font-size: 1.4rem;
+    .destacados {
       text-transform: uppercase;
-      border: #0f1959 solid 1px;
-      background-color: #0f1959e7;
+      font-weight: bolder;
+      text-align: center;
+    }
 
-      a {
-        color: white;
+    .carousel {
+      width: 95%;
+      margin: auto;
+      margin-top: 1%;
+      background: linear-gradient(to right, #283945, #afaaa5);
+
+      .carousel-one {
+        background-color: rgba(220, 208, 185, 0.701);
+      }
+
+      .carousel-two {
+        background-color: rgba(33, 24, 8, 0.701);
+      }
+
+      .carousel-three {
+        background-color: rgb(204, 188, 154);
+      }
+
+      .d-block {
+        object-fit: contain;
+        height: 300px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    }
+
+    .vermas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 5%;
+      .btn {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        border: #14248db9 solid 1px;
+        background-color: #151f64e7;
+        box-shadow: #000 1px 1px 1px;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -366,18 +410,19 @@ html {
   padding: 1%;
   display: grid;
   grid-template-areas:
-    "enlaces copy copy redes"
-    "enlaces copy copy redes"
-    "enlaces copy copy redes"
-    "enlaces copy copy redes";
+    "enlaces copy copy copy redes"
+    "enlaces copy copy copy redes"
+    "enlaces copy copy copy redes"
+    "enlaces copy copy copy redes"
+    "enlaces copy copy copy redes";
 
   .copy {
     grid-area: copy;
-    color: white;
+    color: #b7bcdf;
     font-size: 0.9rem;
     text-align: center;
     margin: auto;
-    text-shadow: #000 1px;
+    padding-top: 2.5%;
     text-transform: uppercase;
   }
 
@@ -388,10 +433,8 @@ html {
       list-style-type: none;
       a {
         text-decoration: none;
-        text-transform: uppercase;
-        color: white;
+        color: #b7bcdf;
         padding: 0px;
-        text-shadow: #000 1px;
       }
     }
   }
@@ -410,47 +453,85 @@ html {
 /*********MEDIA QUERY***********/
 
 @media (max-width: 768px) {
-  .welcome {
-    background-image: none !important;
-    .texth1 {
-      width: 100% !important;
-    }
-  }
+  .contenedor0 {
+    main {
+      .welcome {
+        background-image: none;
+        .texth1 {
+          width: 100%;
+        }
+      }
 
-  .caja1 {
-    .card {
-      margin-bottom: 19px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      .parrafo-uno {
+        text-align: start;
+        margin: 0%;
+        margin-top: 10%;
+        margin-bottom: 11%;
 
-      .verseccion {
-        .btn {
-          margin-left: 14px;
+        p {
+          margin-right: 0%;
+        }
+      }
+
+      .parrafo-dos {
+        margin: 0%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+
+      .card {
+        margin-bottom: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .verseccion {
+          position: absolute;
+          bottom: 5%;
+          left: 40%;
         }
 
         p {
           text-align: center;
+          padding: 10px;
+        }
+      }
+
+      .estoico {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+        .subtittle3 {
+          margin-bottom: 2%;
         }
       }
     }
   }
 
   .caja3 {
-    .col {
-      height: 400px;
+    .album {
       .card {
+        margin: 0%;
+        margin-bottom: 19px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .card-body {
-          height: 325px;
 
-          .verseccion {
-            left: 32%;
-            bottom: 0.5%;
-            margin-bottom: 10px;
-          }
+        .card-body {
+          height: 150px;
+        }
+
+        .verseccion {
+          position: absolute;
+          bottom: 5%;
+          left: 40%;
+        }
+
+        p {
+          text-align: center;
+          padding: 10px;
         }
       }
     }
@@ -474,10 +555,19 @@ html {
         margin: 0%;
         margin-bottom: 8%;
         width: 80%;
+
+        p {
+          height: max-content;
+        }
       }
 
       .form-comentarios {
         width: 65%;
+        margin: 0%;
+
+        p {
+          height: max-content;
+        }
       }
     }
   }
@@ -487,6 +577,7 @@ html {
 
     .subtitulo {
       padding-right: 0;
+      margin-bottom: 10%;
     }
 
     iframe {
@@ -497,6 +588,8 @@ html {
       width: 390px;
       height: 420px;
       margin: auto;
+      margin-top: 10%;
+      margin-bottom: 5%;
     }
   }
 }

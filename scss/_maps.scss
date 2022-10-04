@@ -5,6 +5,7 @@ $estilo: (
   tamFuente: 1.5rem,
   backSize: cover,
   backColor: rgb(255, 255, 255),
+  backPos: center,
 );
 
 .caja1 {
@@ -27,22 +28,27 @@ $estilo: (
 .album {
   .historia {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .agorismo {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .politica {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .ciencias {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .nutricion {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .psicologia {
@@ -51,14 +57,17 @@ $estilo: (
 
   .programacion {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .oficios {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 
   .filosofia {
     background-size: map-get($estilo, backSize);
+    background-position: map-get($estilo, backPos);
   }
 }
 
